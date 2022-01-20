@@ -13,7 +13,6 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
     Item findItemById(Long id);
 
-//    @Query("SELECT * FROM ITEM WHERE SHOPPING_CART_ID = :id")
     List<Item> findByShoppingCart_Id( Long id);
     
     //TODO findItemByShoppingCart implement
